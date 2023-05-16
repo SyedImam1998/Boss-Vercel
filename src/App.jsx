@@ -2,16 +2,11 @@ import React from 'react'
 import './App.css';
 import MainArea from './Components/MainArea';
 import NavBar from './Components/NavBar';
-import { ethers,Contract } from "ethers";
-import Boss_Abi from '../../Back-end/artifacts/contracts/Boss.sol/Boss.json';
-import Web3 from 'web3';
-import Popup from './Components/Popup';
+import { ethers} from "ethers";
 export const walletContext=React.createContext();
 import Coffee from './assets/coffee.png';
 
 
-const contractAddress="0x5FbDB2315678afecb367f032d93F642f64180aa3";
-// const contractAbi=Boss_Abi.abi;
 const contractAbi=[
   {
     "anonymous": false,
