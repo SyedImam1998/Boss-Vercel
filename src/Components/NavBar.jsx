@@ -12,11 +12,11 @@ export default function NavBar(props) {
     if(network==="Sepolia"){
       setSelectedNetwork(1);
       setChainId(11155111);
-      setContractAddress(0x8794D7BB1F18C324382Db3139E3b260130d3c3ed)
+      // setContractAddress(0x8794D7BB1F18C324382Db3139E3b260130d3c3ed)
 
     }else{
       setSelectedNetwork(2);
-      setContractAddress(0x8794D7BB1F18C324382Db3139E3b260130d3c3ed)
+      // setContractAddress(0x8794D7BB1F18C324382Db3139E3b260130d3c3ed)
       setChainId(137)
 
 
