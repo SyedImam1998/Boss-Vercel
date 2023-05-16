@@ -4,7 +4,7 @@ import MainArea from './Components/MainArea';
 import NavBar from './Components/NavBar';
 import { ethers} from "ethers";
 export const walletContext=React.createContext();
-import Coffee from './assets/coffee.png';
+import Coffee from './assets/coffee.png';//imam
 
 
 const contractAbi=[
