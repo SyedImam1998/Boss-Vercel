@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  margin: 0px !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.parent{
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.level-1{
+  position: fixed;
+  top:0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.level-1 div.network{
+  margin-top: 0.5%;
+  /* margin: 0% 2% 0% 2%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00CDFA;
+  width: 121px;
+  height: 57px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.level-1 div label:nth-child(1){
+  font-size: 16px;
+  cursor: pointer;
+}
+.level-1 div label:nth-child(2){
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.selectedNetwork{
+  background: #00CDFA;
+  color: white;
+}
+ div.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  /* border: 1px solid white; */
+  width: 99%;
+  top:0px;
+  
+}
+div.logo label:nth-child(1){
+  font-size: 54px;
+  /* border: 1px solid white; */
+}
+div.logo label:nth-child(2){
+  position: absolute;
+  top:80%;
+  font-size: 11px;
+  /* border: 1px solid white; */
+}
+
+.mainArea{
+  /* margin: 0 auto; */
+ 
+  width: 50%;
+  border: 2px solid #00CDFA;
+}
+  
+.mainArea{
+  margin-top: 30px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:12px;
+  padding:2%;
+  border-radius: 16px;
+}
+.subNav{
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 800;
+  /* position: relative; */
+}
+.inputArea{
+  margin-top:25px ;
+  width: 100%;
+  gap:14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid white; */
+}
+.inputArea div{
+  width: 55%;
+  /* border: 1px solid red; */
+}
+.keyField{
+  font-family: 'Poppins', sans-serif;
+
+  width: 92%;
+  padding: 4%;
+  outline: none;
+  background: transparent;
+  border: 2px solid #00CDFA;
+  border-radius: 16px;
+  font-weight: 600;
+  color: white;
+}
+.secrets{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  
+  width: 92%;
+  padding: 4%;
+  outline: none;
+  background: transparent;
+  border: 2px solid #00CDFA;
+  border-radius: 16px;
+  font-weight: 600;
+
+}
+.saveArea{
+  width: 60%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+
+}
+.saveBtn{
+  /* padding: 40%; */
+  width:30%;
+  /* border: 1px solid white; */
+  background: #00CDFA;
+  padding: 3%;
+  border-radius:16px ;
+  cursor: pointer;
+  color:white;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+.saveBtn:active{
+  transform: translateY(5px);
+}
+.save,.viewbtn{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.opacityFull{
+  opacity: 1;
+  /* border-bottom: 4px solid #00CDFA;
+  border-radius: 2px; */
+
+}
+.opacityHalf{
+  opacity: 0.5;
+
+}
+/* ////////////////////////////////////////// */
+
+li{
+  list-style: none;
+  cursor: pointer;
+}
+
+.underline{
+  width:40px;
+  height: 4px;
+  background: #00CDFA;
+}
+.popup{
+ 
+ 
+ width: 90%;
+ /* border: 1px solid ; */
+ color: white;
+ position: absolute;
+ bottom: 10px;
+ 
+ 
+}
+.popup p{
+  margin: 0 auto;
+  /* font-size: 12px; */
+  font-size: 15px;
+  text-align: center;
+  border: 2px solid #00CDFA;
+  padding:1%;
+  /* padding:5%; */
+  border-radius: 10px;
+  width: max-content;
+
+
+
+
+
+}
+.viewTextArea{
+  display: none;
+}
+
+@keyframes coffee-ani {
+  from {bottom: 10px;}
+  to {bottom: 30px;}
+}
+.coffee{
+  width: 90%;
+  display: flex;
+  position: fixed;
+  /* border: 1px solid white; */
+  justify-content: end;
+  animation: coffee-ani 1s  infinite;
+  animation-direction: alternate-reverse;
+}
+
+
+@media(width<330px){
+  .level-1 div.network{
+    margin: 0% 2% 0% 2%;
+
+  }
+  .popup p{
+    font-size: 12px;
+    padding: 5%;
+  }
+
+  .level-1{
+    top:90px;
+  }
+
+  .level-1 div.network{
+    width: 111px;
+    height: 47px;
+  }
+  .level-1 div label:nth-child(1){
+    font-size: 12px;
+  }
+  .level-1 div label:nth-child(2){
+    font-size: 9px;
+  }
+
+  .mainArea{
+    width: 80%;
+    border: none;
+    margin-top: 80px;
+  }
+  .subNav{
+    font-size: 14px;
+  }
+  .underline {
+    width: 30px;
+    height: 3px;
+  }
+  .inputArea div {
+    width: 97%;
+}
+
+.coffee{
+  justify-content: end;
+}
+.coffee img{
+  width: 25px;
+
+}
+div.logo label:nth-child(2){
+  font-size: 9px;
+}
+div.logo label:nth-child(1){
+  font-size: 40px;
+}
+.saveBtn {
+  width: 50%;
+  padding: 5%;
+}
+}
