@@ -193,15 +193,17 @@ export default function App() {
   }
 
   const handleNetworkChange = () => {
-    window.location.reload();
+    // window.location.reload();
+    connectWallet();
+
   };
 
   React.useEffect(() => {
     if (window.ethereum) {
       console.log("Metamask Detected!!!!");
 
-      // window.ethereum.on("accountsChanged", handleNetworkChange);
-      // window.ethereum.on("chainChanged", handleNetworkChange);
+      window.ethereum.on("accountsChanged", handleNetworkChange);
+      window.ethereum.on("chainChanged", handleNetworkChange);
 
       changeNetwork().then(() => {
         connectWallet();
