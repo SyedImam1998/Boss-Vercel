@@ -164,7 +164,7 @@ export default function App() {
       try {
         await window.ethereum.request({
           method: "wallet_switchEthereumChain",
-          params: [{ chainId: ethers.utils.hexValue(chainId) }],
+          params: [{ chainId: ethers.hexlify(chainId) }],
         });
       } catch (error) {
         console.error(error);
