@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { keyEncryption } from "../Functions/Encrypt";
 import { walletContext } from "../App";
-import Boss_Abi from "../../../Back-end/artifacts/contracts/Boss.sol/Boss.json";
-import { ethers, Contract } from "ethers";
+import { ethers} from "ethers";
 import Popup from "./Popup";
 import { AnimatePresence, motion } from "framer-motion";
 
