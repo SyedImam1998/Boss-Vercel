@@ -45,7 +45,7 @@ export default function SaveArea() {
       setKey("");
       setMessage("");
 
-      setPopupMessage("Password Saved Successfully ✅🛫")
+      setPopupMessage("Please wait till transaction is confirmed ⌚⏰")
       settime(9);
       setpopupShow(true);
     });
